@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ALEXSCPS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>ALEXSCPS</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Packs</a>
+    <a href="#">Socials</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>ALEXSCPS</h2>
+  <p>High-quality scenepacks, clean browsing, fast downloads</p>
+  <button>Browse Packs</button>
+</section>
+
+<section class="packs">
+  <h2>Featured Packs</h2>
+
+  <div class="grid">
+    <div class="card" onclick="openModal('img1.jpg')">
+      <img src="images/img1.jpg">
+    </div>
+
+    <div class="card" onclick="openModal('img2.jpg')">
+      <img src="images/img2.jpg">
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <img id="modal-img">
+    <button onclick="download()">Download</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
